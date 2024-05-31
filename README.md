@@ -4,11 +4,10 @@
 ResQTank is an advanced Lidar-based emergency response system designed for rapid and efficient disaster response in indoor environments. This project utilizes cutting-edge technology to detect people and navigate through complex environments effectively.
 
 ## Key Features
-- **Real-Time 3D Mapping**: Leverages RTAB-Map for real-time 3D mapping.
-![ResQTank Logo](images/logo.jpg)
+- **Real-Time 3D Mapping**: Leverages RTAB-Map for real-time 3D mapping.![floor map](images/floor.png)
 - **AI People Detection**: Utilizes advanced AI algorithms for accurate detection and tracking.
-- **Smart Guidance System**: Path assistance for safe navigation in light and dark environments.
-- **Responsive User Interface**: Feature-rich control panel GUI for easy monitoring and control.
+- **Smart Guidance System**: Path assistance for safe navigation in light and dark environments.![guidance mode](images/guidance-mode.png)
+- **Responsive User Interface**: Feature-rich control panel GUI for easy monitoring and control.![control paned GUI](images/control-panel.png)
 
 
 ## Installation
