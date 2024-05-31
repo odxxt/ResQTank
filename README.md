@@ -5,14 +5,25 @@
 ResQTank is an advanced Lidar-based emergency response system designed for rapid and efficient disaster response in indoor environments. This project was developed as part of our graduation capstone project at the American University of Kuwait. It utilizes cutting-edge technology to 3D map while detecting people and navigating through complex environments effectively.
 
 
-
 ## Key Features
 - **Real-Time 3D Mapping**: Leverages RTAB-Map for real-time 3D mapping.![floor map](images/cap-floor.png)
-- **AI People Detection**: Utilizes advanced AI algorithms for accurate detection and tracking.
+- **AI People Detection**: Utilizes advanced AI algorithms for accurate detection and tracking. ![people detection](images/detect.png)
 - **Smart Guidance System**: Path assistance for safe navigation in light and dark environments. ![guidance mode](images/guidance.png)
 - **Responsive User Interface**: Feature-rich control panel GUI for easy monitoring and control.![control paned GUI](images/gui.jpg)
 
-## Hardware Customization
+
+## Hardware
+
+### Hardware Components
+The following hardware components were used in the ResQTank project:
+- **NVIDIA Jetson Orin Nano**: For processing and running AI algorithms.
+- **Intel RealSense Lidar L515**: For 3D Lidar scanning and depth sensing.
+- **RPLidar A1M8**: For 2D Lidar scanning.
+- **Camera**: For visual input and image processing.
+- **Arduino Uno**: For handling hardware interactions and motor control.
+- **Tank Chassis**: A versatile tank chassis for navigating various terrains.
+
+### Hardware Customization
 This project is primarily focused on the software components of the ResQTank system. While we have chosen a tank design for its versatility and adaptability in various environments, the software can be customized to work with different types of robots or vehicles. The flexibility of the software allows it to be integrated with various hardware configurations, making it suitable for a wide range of applications. Feel free to modify the hardware setup according to your specific requirements.
 
 ![ResQTank body](images/tank.png)
