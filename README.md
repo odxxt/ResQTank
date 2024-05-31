@@ -1,7 +1,9 @@
 # ResQTank Project
 ![ResQTank Logo](images/logo.jpg)
-## Description
+
+# Description
 ResQTank is an advanced Lidar-based emergency response system designed for rapid and efficient disaster response in indoor environments. This project utilizes cutting-edge technology to detect people and navigate through complex environments effectively.
+
 
 ## Key Features
 - **Real-Time 3D Mapping**: Leverages RTAB-Map for real-time 3D mapping.![floor map](images/floor.png)
@@ -9,6 +11,10 @@ ResQTank is an advanced Lidar-based emergency response system designed for rapid
 - **Smart Guidance System**: Path assistance for safe navigation in light and dark environments.![guidance mode](images/guidance-mode.png)
 - **Responsive User Interface**: Feature-rich control panel GUI for easy monitoring and control.![control paned GUI](images/control-panel.png)
 
+## Hardware Customization
+This project is primarily focused on the software components of the ResQTank system. While we have chosen a tank design for its versatility and adaptability in various environments, the software can be customized to work with different types of robots or vehicles. The flexibility of the software allows it to be integrated with various hardware configurations, making it suitable for a wide range of applications. Feel free to modify the hardware setup according to your specific requirements.
+
+![ResQTank body](images/tank.png)
 
 ## Installation
 
@@ -56,7 +62,7 @@ Some components used in this project are not available through pip and need to b
 - For our project, we have included a custom configuration file `config.ini` located in the `rtabmap_config` folder. This configuration has been optimized for the best performance in controlled indoor environments using the Intel RealSense L515. We recommend using this configuration to replicate our results.
 
 ## Arduino Setup
-The Arduino is programmed to interface with the [Cytron 20Amp 6V-30V DC Motor Driver](https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver), controlling the movement of the motors based on serial commands. The specific Arduino code can be found in the repository.
+The Arduino Uno is programmed to interface with the [Cytron 20Amp 6V-30V DC Motor Drivers](https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver), controlling the movement of the motors based on serial commands. The specific Arduino code can be found in the repository.
 
 ##### Motor Driver Configuration
 The provided Arduino script is configured for the Cytron 20Amp 6V-30V DC Motor Driver. This setup controls various movements through serial commands as detailed in the table below. If you are using a different motor driver, the code can be easily adapted by modifying the motor control commands. The structure of the code is straightforward and simple, allowing for easy modifications.
@@ -76,7 +82,52 @@ Here is a table of serial commands and their corresponding movements, along with
 To modify or customize the Arduino code for different motor drivers, adjust the motor control functions within the script to match the input specifications and control methods of the new driver. This customization allows the ResQTank to be adaptable to a variety of hardware configurations.
 
 ## Usage
-Explain how to run the project after installation, any command line arguments they might need, and how to navigate the GUI.
+### Running the GUI Control Panel
+To run the GUI control panel, navigate to the `control_panel` folder and execute the `gui.py` file using Python. Ensure you have all dependencies installed as per the [Installation](#installation) section.
+
+1. Open a terminal and navigate to the `control_panel` directory:
+   ```bash
+   cd control_panel
+   ```
+2. Run the `gui.py` file:
+   ```bash
+   python3 gui.py
+   ```
+
+### Navigating the GUI
+
+Once the GUI is running, you will see the ResQTank Control Panel as shown below:
+
+![ResQTank Control Panel](images/control-panel.png)
+
+#### Controls Section
+The control panel includes buttons for various movement controls of the tank, such as moving forward, backward, turning left, turning right, and stopping. These controls can also be operated using keyboard inputs:
+- **Movement**: Use `W`, `A`, `S`, `D`, or the `arrow keys` for forward, left, backward, and right movements respectively.
+- **Additional Controls**: Use `Q`, `E`, `C`, and `Z` for additional movements and commands.
+- **Manual Mode**: Activates manual control mode.
+- **Guidance Mode**: Activates assisted guidance mode.
+
+#### Tank Status
+Displays the connection status of various components:
+- **3D Lidar**: Status indicator for the 3D Lidar sensor.
+- **2D Lidar**: Status indicator for the 2D Lidar sensor.
+- **Camera**: Status indicator for the camera.
+- **Arduino**: Status indicator for the Arduino.
+- **Motor Drivers**: Status indicator for the motor drivers.
+
+A green indicator means the device is connected, while a red indicator means it is not connected.
+
+#### Features Section
+- **Start 3D Mapping**: Begins the 3D mapping process.
+- **Start Image Processing**: Starts the image processing algorithms.
+- **Start IR**: Activates the infrared sensor for dark environments.
+
+#### Terminal Output
+The terminal output at the bottom of the GUI provides real-time feedback on the system's status, including connection attempts and error messages.
+
+By following these instructions, you should be able to run and navigate the ResQTank GUI control panel effectively. Adjust any settings or controls as necessary based on your specific hardware configuration and project requirements.
+
+
 
 ## Contributing
 We welcome contributions! If you would like to help make ResQTank better, please feel free to fork the repository and submit a pull request.
