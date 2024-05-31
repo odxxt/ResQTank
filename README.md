@@ -65,7 +65,7 @@ Some components used in this project are not available through pip and need to b
 The Arduino Uno is programmed to interface with the [Cytron 20Amp 6V-30V DC Motor Drivers](https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver), controlling the movement of the motors based on serial commands. The specific Arduino code can be found in the repository.
 
 ##### Motor Driver Configuration
-The provided Arduino script is configured for the Cytron 20Amp 6V-30V DC Motor Driver. This setup controls various movements through serial commands as detailed in the table below. If you are using a different motor driver, the code can be easily adapted by modifying the motor control commands. The structure of the code is straightforward and simple, allowing for easy modifications.
+The provided Arduino script is configured for the Cytron motor driver. This setup controls various movements through serial commands as detailed in the table below. If you are using a different motor driver, the code can be easily adapted by modifying the motor control commands. The structure of the code is straightforward and simple, allowing for easy modifications.
 
 ##### Control Commands
 Here is a table of serial commands and their corresponding movements, along with the keyboard bindings used in our control interface:
@@ -108,19 +108,16 @@ The control panel includes buttons for various movement controls of the tank, su
 - **Guidance Mode**: Activates assisted guidance mode.
 
 #### Tank Status
-Displays the connection status of various components:
-- **3D Lidar**: Status indicator for the 3D Lidar sensor.
-- **2D Lidar**: Status indicator for the 2D Lidar sensor.
-- **Camera**: Status indicator for the camera.
-- **Arduino**: Status indicator for the Arduino.
-- **Motor Drivers**: Status indicator for the motor drivers.
-
-A green indicator means the device is connected, while a red indicator means it is not connected.
+This section displays the connection status of various components, including the 3D Lidar, 2D Lidar, camera, Arduino, and motor drivers. Each status indicator runs on a separate thread, ensuring real-time updates and responsiveness without blocking the main GUI thread. A green indicator means the device is connected, while a red indicator means it is not connected.
 
 #### Features Section
+This section includes buttons to start various features of the ResQTank, these includes the following: 
 - **Start 3D Mapping**: Begins the 3D mapping process.
 - **Start Image Processing**: Starts the image processing algorithms.
 - **Start IR**: Activates the infrared sensor for dark environments.
+
+Each function button in the Features tab triggers a separate subprocess, allowing these operations to run independently and concurrently with the main GUI. This ensures that resource-intensive tasks do not interfere with the responsiveness of the user interface.
+
 
 #### Terminal Output
 The terminal output at the bottom of the GUI provides real-time feedback on the system's status, including connection attempts and error messages.
