@@ -2,17 +2,15 @@
 ![ResQTank Logo](images/logo.jpg)
 
 # Description
-ResQTank is an advanced Lidar-based emergency response system designed for rapid and efficient disaster response in indoor environments. This project utilizes cutting-edge technology to detect people and navigate through complex environments effectively.
+ResQTank is an advanced Lidar-based emergency response system designed for rapid and efficient disaster response in indoor environments. This project was developed as part of our graduation capstone project at the American University of Kuwait. It utilizes cutting-edge technology to 3D map while detecting people and navigating through complex environments effectively.
+
 
 
 ## Key Features
-- **Real-Time 3D Mapping**: Leverages RTAB-Map for real-time 3D mapping.
-  ![floor map](images/cap-floor.png)
+- **Real-Time 3D Mapping**: Leverages RTAB-Map for real-time 3D mapping.![floor map](images/cap-floor.png)
 - **AI People Detection**: Utilizes advanced AI algorithms for accurate detection and tracking.
-- **Smart Guidance System**: Path assistance for safe navigation in light and dark environments.
-  ![guidance mode](images/guidance.png)
-- **Responsive User Interface**: Feature-rich control panel GUI for easy monitoring and control.
-  ![control paned GUI](images/gui.png)
+- **Smart Guidance System**: Path assistance for safe navigation in light and dark environments. ![guidance mode](images/guidance.png)
+- **Responsive User Interface**: Feature-rich control panel GUI for easy monitoring and control.![control paned GUI](images/gui.jpg)
 
 ## Hardware Customization
 This project is primarily focused on the software components of the ResQTank system. While we have chosen a tank design for its versatility and adaptability in various environments, the software can be customized to work with different types of robots or vehicles. The flexibility of the software allows it to be integrated with various hardware configurations, making it suitable for a wide range of applications. Feel free to modify the hardware setup according to your specific requirements.
@@ -101,7 +99,7 @@ To run the GUI control panel, navigate to the `control_panel` folder and execute
 
 Once the GUI is running, you will see the ResQTank Control Panel as shown below:
 
-![ResQTank Control Panel](images/control-panel.png)
+![ResQTank Control Panel](images/gui.jpg)
 
 #### Controls Section
 The control panel includes buttons for various movement controls of the tank, such as moving forward, backward, turning left, turning right, and stopping. These controls can also be operated using keyboard inputs:
@@ -128,7 +126,6 @@ The terminal output at the bottom of the GUI provides real-time feedback on the 
 By following these instructions, you should be able to run and navigate the ResQTank GUI control panel effectively. Adjust any settings or controls as necessary based on your specific hardware configuration and project requirements.
 
 
-
 ## Contributing
 We welcome contributions! If you would like to help make ResQTank better, please feel free to fork the repository and submit a pull request.
 
@@ -142,5 +139,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Amer Ammar
 
 ## Acknowledgments
-- Thanks to all the contributors who have invested their time into making ResQTank a reality.
-- Special thanks to NVIDIA and Intel for their powerful hardware and software solutions.
+- A heartfelt thank you to our supervisor, Dr. Mounib Khanafer, for his guidance and support throughout this graduation capstone project.
+- Thanks to all the contributors who have invested their time into making ResQTank a reality, especialy our peers and colleagues who offered valuable feedback and assistance during the development process.
+- Thank you to the makers and developers of open-source libraries and tools, without which this project would not have been possible.
