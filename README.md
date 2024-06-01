@@ -24,9 +24,13 @@ The following hardware components were used in the ResQTank project:
 - **Tank Chassis**: A versatile tank chassis for navigating various terrains.
 
 ### Hardware Customization
-This project is primarily focused on the software components of the ResQTank system. While we have chosen a tank design for its versatility and adaptability in various environments, the software can be customized to work with different types of robots or vehicles. The flexibility of the software allows it to be integrated with various hardware configurations, making it suitable for a wide range of applications. Feel free to modify the hardware setup according to your specific requirements.
+This project is primarily focused on the software components of the ResQTank system. While we have chosen a tank design for its versatility and adaptability in various environments, the software can be customized to work with different types of robots or vehicles.
 
+The flexibility of the software allows it to be integrated with various hardware configurations, making it suitable for a wide range of applications. All the components used in this project, including sensors, motor drivers, and the chassis, can be replaced or adjusted to fit specific use cases. Minor adjustments to the setup and code will be required to ensure compatibility with different hardware.
+
+Feel free to modify the hardware setup according to your specific requirements. This ensures that the ResQTank system can be tailored to meet the needs of diverse applications and environments.
 ![ResQTank body](images/tank.png)
+
 
 ## Installation
 
